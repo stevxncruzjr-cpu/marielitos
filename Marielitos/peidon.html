@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Me perdonas?</title>
+
+  <link rel="stylesheet" href="css/peidon.css">
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <h1>¿Me perdonas? 🥺</h1>
+
+    <img src="img/Css.jpg" alt="gus gus">
+
+    <br>
+
+    <button id="si">Sí ❤️</button>
+    <button id="no">No 😡</button>
+
+  </div>
+
+  <script>
+    const botonNo = document.getElementById("no");
+
+    botonNo.addEventListener("mouseover", () => {
+
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+
+      botonNo.style.left = `${x}px`;
+      botonNo.style.top = `${y}px`;
+
+    });
+
+    document.getElementById("si").addEventListener("click", () => {
+      alert("Sabía que me perdonarías ❤️");
+    });
+  </script>
+
+</body>
+</html>
